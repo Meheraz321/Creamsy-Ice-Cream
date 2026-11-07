@@ -5,7 +5,7 @@ import { defineConfig } from 'vite';
 
 export default defineConfig(() => {
   return {
-    base: './', 
+    base: '/creamsy-ice-cream/', // এটি অবশ্যই থাকতে হবে
     plugins: [react(), tailwindcss()],
     resolve: {
       alias: {
@@ -13,9 +13,7 @@ export default defineConfig(() => {
       },
     },
     server: {
-      // Do not modify—file watching is disabled to prevent flickering during agent edits.
       hmr: process.env.DISABLE_HMR !== 'true',
-      // Disable file watching when DISABLE_HMR is true to save CPU during agent edits.
       watch: process.env.DISABLE_HMR === 'true' ? null : {},
     },
   };
