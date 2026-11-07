@@ -5,7 +5,7 @@ import { defineConfig } from 'vite';
 
 export default defineConfig(() => {
   return {
-    base: '/creamsy-ice-cream/', // এটি অবশ্যই থাকতে হবে
+    base: '/Creamsy-Ice-Cream/', // আপনার গিটহাব রিপোজিটরির নাম হুবহু এখানে লিখে দিন
     plugins: [react(), tailwindcss()],
     resolve: {
       alias: {
