@@ -1,6 +1,6 @@
 import { Flavor, FAQItem, Review } from './types';
 
-export const MASCOT_IMAGE = "/src/assets/images/creamsy_mascot_1783828739900.jpg";
+export const MASCOT_IMAGE = "./images/creamsy_mascot_1783828739900.jpg";
 
 export const FLAVORS: Flavor[] = [
   {
@@ -13,7 +13,7 @@ export const FLAVORS: Flavor[] = [
     description: "Our hallmark recipe. Rich Belgian chocolate cream churned with a molten fudge ribbon and crispy premium cocoa shavings.",
     bgColor: "#BF360C", // Vibrant reddish orange/rust background
     themeClass: "text-[#BF360C] bg-[#BF360C]/10 border-[#BF360C]/20",
-    image: "/src/assets/images/chocolate_cup_1783828757855.jpg",
+    image: "./images/chocolate_cup_1783828757855.jpg",
     floatingEmojis: ["🍫", "🥛", "🌟", "🍫", "❄️"],
     accentColor: "bg-[#FF5722] hover:bg-[#E64A19] text-white focus:ring-[#FF5722]"
   },
@@ -27,7 +27,7 @@ export const FLAVORS: Flavor[] = [
     description: "Gourmet sun-ripened strawberry puree folded into fresh heavy cream with delicate bits of handpicked organic strawberry pieces.",
     bgColor: "#EC407A", // Pink background
     themeClass: "text-[#EC407A] bg-[#EC407A]/10 border-[#EC407A]/20",
-    image: "/src/assets/images/strawberry_cup_1783828772764.jpg",
+    image: "./images/strawberry_cup_1783828772764.jpg",
     floatingEmojis: ["🍓", "🌸", "✨", "🍓", "🧁"],
     accentColor: "bg-[#E91E63] hover:bg-[#C2185B] text-white focus:ring-[#E91E63]"
   },
@@ -41,7 +41,7 @@ export const FLAVORS: Flavor[] = [
     description: "Invigorating cool garden mint whipped with organic sweet cream and heavily studded with high-quality dark chocolate chips.",
     bgColor: "#00897B", // Deep teal mint green
     themeClass: "text-[#00897B] bg-[#00897B]/10 border-[#00897B]/20",
-    image: "/src/assets/images/mint_cup_1783828788409.jpg",
+    image: "./images/mint_cup_1783828788409.jpg",
     floatingEmojis: ["🍃", "🍫", "🌱", "✨", "❄️"],
     accentColor: "bg-[#009688] hover:bg-[#00796B] text-white focus:ring-[#009688]"
   },
@@ -55,7 +55,7 @@ export const FLAVORS: Flavor[] = [
     description: "An elegant infusion of organic wild blueberries and subtle notes of calming French lavender, resulting in a smooth, velvety purple scoop.",
     bgColor: "#5E35B1", // Purple background
     themeClass: "text-[#5E35B1] bg-[#5E35B1]/10 border-[#5E35B1]/20",
-    image: "/src/assets/images/blueberry_cup_1783828804172.jpg",
+    image: "./images/blueberry_cup_1783828804172.jpg",
     floatingEmojis: ["🫐", "🍇", "💜", "✨", "🌿"],
     accentColor: "bg-[#673AB7] hover:bg-[#512DA8] text-white focus:ring-[#673AB7]"
   },
@@ -69,7 +69,7 @@ export const FLAVORS: Flavor[] = [
     description: "Sun-drenched, ripe Alfonso mango pulp blended into a smooth and refreshing golden cream, offering an intense taste of sweet summer joy.",
     bgColor: "#FB8C00", // Warm yellow orange
     themeClass: "text-[#FB8C00] bg-[#FB8C00]/10 border-[#FB8C00]/20",
-    image: "/src/assets/images/mango_cup_1783828821164.jpg",
+    image: "./images/mango_cup_1783828821164.jpg",
     floatingEmojis: ["🥭", "🍊", "☀️", "🥭", "💛"],
     accentColor: "bg-[#FF9800] hover:bg-[#F57C00] text-white focus:ring-[#FF9800]"
   }
