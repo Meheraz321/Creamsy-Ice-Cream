@@ -1,0 +1,6 @@
+{
+  "name": "Creamsy Ice Cream",
+  "description": "An interactive, animated premium website for Creamsy Ice Cream, featuring dynamic flavor transitions, interactive ordering, and playful animations exactly like the reference video.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

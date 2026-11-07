@@ -1,0 +1,56 @@
+{
+  "entities": {
+    "Order": {
+      "title": "Order",
+      "description": "An ice cream order placed by a customer",
+      "type": "object",
+      "properties": {
+        "customerName": { "type": "string" },
+        "customerPhone": { "type": "string" },
+        "customerAddress": { "type": "string" },
+        "items": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "flavorId": { "type": "string" },
+              "name": { "type": "string" },
+              "price": { "type": "string" },
+              "quantity": { "type": "number" }
+            },
+            "required": ["flavorId", "name", "price", "quantity"]
+          }
+        },
+        "paymentMethod": { "type": "string" },
+        "transactionId": { "type": "string" },
+        "amountUsd": { "type": "number" },
+        "amountBdt": { "type": "number" },
+        "status": { "type": "string", "enum": ["Pending", "Shipped", "Cancelled"] },
+        "createdAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["customerName", "customerPhone", "customerAddress", "items", "paymentMethod", "transactionId", "amountUsd", "amountBdt", "status", "createdAt"]
+    },
+    "Customer": {
+      "title": "Customer",
+      "description": "A registered customer account details",
+      "type": "object",
+      "properties": {
+        "name": { "type": "string" },
+        "phone": { "type": "string" },
+        "pin": { "type": "string" },
+        "createdAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["name", "phone", "pin", "createdAt"]
+    }
+  },
+  "firestore": {
+    "orders": {
+      "schema": "Order",
+      "description": "Collection of customer orders"
+    },
+    "customers": {
+      "schema": "Customer",
+      "description": "Collection of registered customers"
+    }
+  }
+}
